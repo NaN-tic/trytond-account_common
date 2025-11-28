@@ -19,7 +19,7 @@ def register():
         module='account_common', type_='wizard')
     Pool.register(
         invoice.Invoice,
-        invoice.InvoiceUnpay,
+        invoice.InvoiceUndoPay,
         depends=['account_invoice'],
         module='account_common', type_='model')
     Pool.register(
