@@ -145,8 +145,8 @@ class Test(unittest.TestCase):
         self.assertEqual(invoice.amount_to_pay, Decimal('140.00'))
         self.assertEqual(invoice.state, 'posted')
 
-        # UnPay
-        pay = invoice.click('unpay')
+        # Undo Pay
+        pay = invoice.click('undo_pay')
         self.assertEqual(invoice.amount_to_pay, Decimal('240.00'))
         self.assertEqual(invoice.state, 'posted')
 
@@ -159,7 +159,7 @@ class Test(unittest.TestCase):
         self.assertEqual(invoice.amount_to_pay, Decimal('0'))
         self.assertEqual(invoice.state, 'paid')
 
-        # UnPay
-        pay = invoice.click('unpay')
+        # Undo Pay
+        pay = invoice.click('undo_pay')
         self.assertEqual(invoice.amount_to_pay, Decimal('240.00'))
         self.assertEqual(invoice.state, 'posted')
