@@ -33,8 +33,7 @@ class Move(metaclass=PoolMeta):
     @classmethod
     def __setup__(cls):
         super().__setup__()
-        if 'state' not in cls._check_modify_exclude:
-            cls._check_modify_exclude.append('state')
+        cls._check_modify_exclude.add('state')
         cls._buttons.update({
                 'draft': {
                     'invisible': ((Eval('state') == 'draft')
@@ -64,12 +63,8 @@ class Move(metaclass=PoolMeta):
     @classmethod
     @ModelView.button
     def draft(cls, moves):
-        pool = Pool()
-        Line = pool.get('account.move.line')
-
         moves_to_draft = [m for m in moves if m.allow_draft]
         if moves_to_draft:
             cls.write(moves_to_draft, {
                 'state': 'draft',
                 })
-            Line.check_modify([l for m in moves_to_draft for l in m.lines])
