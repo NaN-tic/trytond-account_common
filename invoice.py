@@ -53,7 +53,7 @@ class Invoice(metaclass=PoolMeta):
         return super(Invoice, cls).cancel(invoices)
 
 
-class InvoiceUnpay(metaclass=PoolMeta):
+class InvoiceUndoPay(metaclass=PoolMeta):
     __name__ = 'account.invoice'
 
     paid_directly = fields.Function(fields.Boolean("Has Payed directly",
@@ -64,7 +64,7 @@ class InvoiceUnpay(metaclass=PoolMeta):
     def __setup__(cls):
         super().__setup__()
         cls._buttons.update({
-                'unpay': {
+                'undo_pay': {
                     'invisible': ~Eval('paid_directly', False),
                     'depends': ['paid_directly'],
                     },
@@ -79,7 +79,7 @@ class InvoiceUnpay(metaclass=PoolMeta):
     @classmethod
     @ModelView.button
     @Workflow.transition('posted')
-    def unpay(cls, invoices):
+    def undo_pay(cls, invoices):
         pool = Pool()
         Move = pool.get('account.move')
         Reconciliation = pool.get('account.move.reconciliation')

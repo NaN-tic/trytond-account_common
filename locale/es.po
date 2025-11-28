@@ -38,7 +38,7 @@ msgstr ""
 "El asiento \"%(move)s\" no se puede cancelar porque tiene un origen "
 "\"%(origin)s\". Para cancelarlo se debe hacer desde el origen."
 
-msgctxt "model:ir.model.button,confirm:invoice_unpay_button"
+msgctxt "model:ir.model.button,confirm:invoice_undo_pay_button"
 msgid ""
 "This action will remove all the payments done directly to the invoice from "
 "the PAY button. Are you sure you want to continue?"
@@ -46,7 +46,7 @@ msgstr ""
 "Esta acción eliminarar los pagos hechos directamente a la factura a través "
 "del botón PAGAR. ¿Estás seguro que quieres continuar?"
 
-msgctxt "model:ir.model.button,string:invoice_unpay_button"
+msgctxt "model:ir.model.button,string:invoice_undo_pay_button"
 msgid "Void Payment"
 msgstr "Anular Pago"
 

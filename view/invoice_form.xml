@@ -3,6 +3,6 @@
 contains the full copyright notices and license terms. -->
 <data>
     <xpath expr="/form/group[@id='buttons']/button[@name='pay']" position="after">
-        <button name="unpay" icon="tryton-forward"/>
+        <button name="undo_pay" icon="tryton-forward"/>
     </xpath>
 </data>
