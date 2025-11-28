@@ -1,0 +1,36 @@
+<?xml version='1.0'?>
+<!-- This file is part of Tryton.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<tryton>
+    <data grouped="1">
+        <record model="ir.ui.view" id="move_line_view_tree">
+            <field name="model">account.move.line</field>
+            <field name="inherit" ref="account.move_line_view_tree"/>
+            <field name="name">move_line_tree</field>
+        </record>
+
+        <record model="ir.ui.view" id="move_view_form">
+            <field name="model">account.move</field>
+            <field name="inherit" ref="account.move_view_form"/>
+            <field name="name">move_form</field>
+        </record>
+        <record model="ir.ui.view" id="move_view_tree">
+            <field name="model">account.move</field>
+            <field name="inherit" ref="account.move_view_tree"/>
+            <field name="name">move_tree</field>
+        </record>
+
+        <record model="ir.model.button" id="move_draft_button">
+            <field name="name">draft</field>
+            <field name="string">Draft</field>
+            <field name="model">account.move</field>
+        </record>
+
+        <!-- account.move.reconcile_lines.writeoff -->
+        <record model="ir.ui.view" id="reconcile_lines_writeoff_view_form">
+            <field name="model">account.move.reconcile_lines.writeoff</field>
+            <field name="inherit" ref="account.reconcile_lines_writeoff_view_form"/>
+            <field name="name">reconcile_lines_writeoff_form</field>
+        </record>
+    </data>
+</tryton>

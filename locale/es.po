@@ -1,0 +1,71 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:account.invoice,paid_directly:"
+msgid "Has Payed directly"
+msgstr "Ha pagado directamente"
+
+msgctxt "field:account.move,allow_button_draft:"
+msgid "Allow Button Draft Move"
+msgstr "Permitir botón Borrador"
+
+msgctxt "field:account.move,allow_draft:"
+msgid "Allow Draft Move"
+msgstr "Permitir asiento en borrador"
+
+msgctxt "field:account.period,code:"
+msgid "Code"
+msgstr "Código"
+
+msgctxt "help:account.invoice,paid_directly:"
+msgid "The invoice has payed with the 'PAY' button"
+msgstr "La factura se ha pagado con el botón 'PAGAR'."
+
+msgctxt "model:ir.message,text:msg_cancel_invoice_with_group_permission"
+msgid "You do not have permission to cancel invoices."
+msgstr "No tienes permisos para cancelar facturas."
+
+msgctxt "model:ir.message,text:msg_cancel_invoice_with_move_post"
+msgid "You cannot cancel an invoice with a posted move."
+msgstr "No se puede cancelar una factura  con un asiento contabilizado."
+
+msgctxt "model:ir.message,text:msg_cancel_move_with_origin"
+msgid ""
+"The move \"%(move)s\" colud not be cancelled because came from origin "
+"\"%(origin)s\". To cancel it has to be done througth the origin."
+msgstr ""
+"El asiento \"%(move)s\" no se puede cancelar porque tiene un origen "
+"\"%(origin)s\". Para cancelarlo se debe hacer desde el origen."
+
+msgctxt "model:ir.model.button,confirm:invoice_unpay_button"
+msgid ""
+"This action will remove all the payments done directly to the invoice from "
+"the PAY button. Are you sure you want to continue?"
+msgstr ""
+"Esta acción eliminarar los pagos hechos directamente a la factura a través "
+"del botón PAGAR. ¿Estás seguro que quieres continuar?"
+
+msgctxt "model:ir.model.button,string:invoice_unpay_button"
+msgid "Void Payment"
+msgstr "Anular Pago"
+
+msgctxt "model:ir.model.button,string:move_draft_button"
+msgid "Draft"
+msgstr "Borrador"
+
+msgctxt "model:res.group,name:group_invoice_cancel"
+msgid "Invoice to Cancel"
+msgstr "Factura a Cancelada"
+
+msgctxt "view:account.tax.template:"
+msgid "Codes"
+msgstr "Códigos"
+
+msgctxt "view:account.tax:"
+msgid "Codes"
+msgstr "Códigos"
+
+msgctxt "view:company.company:"
+msgid "Registration Data"
+msgstr "Datos Registrales"

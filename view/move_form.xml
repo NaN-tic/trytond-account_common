@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!-- The COPYRIGHT file at the top level of this repository contains the full
+     copyright notices and license terms. -->
+<data>
+    <xpath expr="/form/button[@name='post']" position="replace">
+      <group col="-1" colspan="2" id="buttons">
+        <button name="draft" icon="tryton-clear"/>
+        <button name="post" icon="tryton-ok"/>
+      </group>
+    </xpath>
+</data>
