@@ -29,7 +29,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record model="res.group" id="group_invoice_cancel">
-            <field name="name">Invoice to Cancel</field>
+            <field name="name">Cancel Invoices</field>
         </record>
         <record model="res.user-res.group" id="user_admin_group_invoice_cancel">
             <field name="user" ref="res.user_admin"/>
