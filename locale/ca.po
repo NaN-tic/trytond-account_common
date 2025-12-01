@@ -55,8 +55,8 @@ msgid "Draft"
 msgstr "Esborrany"
 
 msgctxt "model:res.group,name:group_invoice_cancel"
-msgid "Invoice to Cancel"
-msgstr "Factura a Cancel·lat"
+msgid "Cancel Invoices"
+msgstr "Cancel·lar factures"
 
 msgctxt "view:account.tax.template:"
 msgid "Codes"

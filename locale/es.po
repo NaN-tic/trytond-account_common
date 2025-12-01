@@ -55,8 +55,8 @@ msgid "Draft"
 msgstr "Borrador"
 
 msgctxt "model:res.group,name:group_invoice_cancel"
-msgid "Invoice to Cancel"
-msgstr "Factura a Cancelada"
+msgid "Cancel Invoices"
+msgstr "Cancelar facturas"
 
 msgctxt "view:account.tax.template:"
 msgid "Codes"
