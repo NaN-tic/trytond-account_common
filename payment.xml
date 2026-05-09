@@ -1,0 +1,12 @@
+<?xml version='1.0'?>
+<!-- This file is part of Tryton.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<tryton>
+    <data depends="account_payment">
+        <record model="ir.ui.view" id="payment_view_list">
+            <field name="model">account.payment</field>
+            <field name="inherit" ref="account_payment.payment_view_list"/>
+            <field name="name">payment_list</field>
+        </record>
+    </data>
+</tryton>
