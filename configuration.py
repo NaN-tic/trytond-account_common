@@ -15,6 +15,13 @@ class Configuration(metaclass=PoolMeta):
         "The standard fiscal identifier types from Party are always included.")
 
     def get_tax_identifier_types(self):
+        selection = self.fields_get(
+            ['identifier_types'])['identifier_types']['selection']
+        try:
+            identifier_types = self.identifier_types
+        except AttributeError:
+            identifier_types = None
         return [
-            (k, v) for k, v in self.get_identifier_types()
-            if k not in TAX_IDENTIFIER_TYPES]
+            (k, v) for k, v in selection
+            if k not in TAX_IDENTIFIER_TYPES
+            and (not identifier_types or k in identifier_types)]

@@ -11,7 +11,13 @@ class Party(metaclass=PoolMeta):
     def tax_identifier_types(cls):
         Configuration = Pool().get('party.configuration')
         types = list(super().tax_identifier_types())
-        for identifier_type in Configuration(1).tax_identifier_types or []:
+        try:
+            extra_types = Configuration(1).tax_identifier_types or []
+        except (AssertionError, AttributeError):
+            # During module setup the model or field descriptor may not yet be
+            # fully bound.
+            extra_types = []
+        for identifier_type in extra_types:
             if identifier_type not in types:
                 types.append(identifier_type)
         return types
