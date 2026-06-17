@@ -2,17 +2,21 @@
 # this repository contains the full copyright notices and license terms.
 from trytond.pool import Pool
 from . import account
+from . import configuration
 from . import currency
 from . import invoice
 from . import move
+from . import party
 
 
 def register():
     Pool.register(
         account.Period,
+        configuration.Configuration,
         currency.Currency,
         move.Move,
         invoice.CreditInvoiceStart,
+        party.Party,
         module='account_common', type_='model')
     Pool.register(
         move.CancelMoves,
