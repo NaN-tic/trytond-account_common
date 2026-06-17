@@ -18,24 +18,23 @@ class AccountCommonTestCase(ModuleTestCase):
         Party = pool.get('party.party')
 
         default_types = list(Party.tax_identifier_types())
+        additional_type = 'be_businessid'
 
         configuration = Configuration(1)
-        configuration.tax_identifier_types = ['be_vat']
-        configuration.save()
-
+        self.assertNotIn(additional_type, default_types)
         self.assertEqual(default_types, Party.tax_identifier_types())
-        self.assertNotIn(
-            ('be_vat', "Belgian Enterprise Number"),
+        self.assertIn(
+            (additional_type, "Belgian Company Number"),
             configuration.get_tax_identifier_types())
         self.assertIn(
             ('es_cif', "Spanish Company Tax"),
             configuration.get_tax_identifier_types())
 
-        configuration.tax_identifier_types = ['es_cif']
+        configuration.tax_identifier_types = [additional_type]
         configuration.save()
 
         self.assertEqual(
             Party.tax_identifier_types(),
-            default_types + ['es_cif'])
+            default_types + [additional_type])
 
 del ModuleTestCase
