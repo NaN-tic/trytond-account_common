@@ -14,6 +14,7 @@ class Configuration(metaclass=PoolMeta):
         help="Defines extra identifier types that are considered fiscal.\n"
         "The standard fiscal identifier types from Party are always included.")
 
+    @fields.depends('identifier_types')
     def get_tax_identifier_types(self):
         selection = self.fields_get(
             ['identifier_types'])['identifier_types']['selection']
