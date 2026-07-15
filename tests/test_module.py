@@ -36,5 +36,7 @@ class AccountCommonTestCase(ModuleTestCase):
         self.assertEqual(
             Party.tax_identifier_types(),
             default_types + [additional_type])
+        self.assertEqual(
+            Configuration.__rpc__['get_tax_identifier_types'].instantiate, 0)
 
 del ModuleTestCase
