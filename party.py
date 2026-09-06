@@ -12,6 +12,9 @@ class Party(metaclass=PoolMeta):
         Configuration = Pool().get('party.configuration')
         types = list(super().tax_identifier_types())
         try:
+            if (Configuration.id.name is None
+                    or Configuration.tax_identifier_types.name is None):
+                return types
             extra_types = Configuration(1).tax_identifier_types or []
         except (AssertionError, AttributeError):
             # During module setup the model or field descriptor may not yet be
