@@ -28,6 +28,7 @@ class Invoice(metaclass=PoolMeta):
     def cancel(cls, invoices):
         pool = Pool()
         Data = pool.get('ir.model.data')
+        User = pool.get('res.user')
 
         group_invoice_cancel = Data.search([
                 ('fs_id','=','group_invoice_cancel'),
@@ -41,7 +42,8 @@ class Invoice(metaclass=PoolMeta):
             if (invoice.state == 'posted' or (invoice.type == 'out'
                         and invoice.state == 'draft'
                         and invoice.number is not None)):
-                if cancel_group not in user_groups:
+                if (cancel_group not in user_groups
+                        and not User.is_administrator()):
                     raise UserError(gettext(
                             'account_common.'
                             'msg_cancel_invoice_with_group_permission'))

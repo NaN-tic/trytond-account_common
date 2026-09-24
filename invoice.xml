@@ -41,9 +41,5 @@ this repository contains the full copyright notices and license terms. -->
         <record model="res.group" id="group_invoice_cancel">
             <field name="name">Cancel Invoices</field>
         </record>
-        <record model="res.user-res.group" id="user_admin_group_invoice_cancel">
-            <field name="user" ref="res.user_admin"/>
-            <field name="group" ref="group_invoice_cancel"/>
-        </record>
     </data>
 </tryton>
