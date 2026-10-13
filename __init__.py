@@ -12,6 +12,8 @@ from . import party
 def register():
     Pool.register(
         account.Period,
+        account.TaxRuleLineTemplate,
+        account.TaxRuleLine,
         configuration.Configuration,
         currency.Currency,
         move.Move,
