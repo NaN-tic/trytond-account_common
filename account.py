@@ -24,9 +24,11 @@ class _TaxRuleLineMixin:
     __slots__ = ()
 
     from_organization = fields.Many2One(
-        'country.organization', 'From Organization', ondelete='RESTRICT')
+        'country.organization', 'From Organization', ondelete='RESTRICT',
+        help="Apply only to addresses in countries belonging to this organization.")
     to_organization = fields.Many2One(
-        'country.organization', 'To Organization', ondelete='RESTRICT')
+        'country.organization', 'To Organization', ondelete='RESTRICT',
+        help="Apply only to addresses in countries belonging to this organization.")
 
 
 class TaxRuleLineTemplate(_TaxRuleLineMixin, metaclass=PoolMeta):

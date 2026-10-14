@@ -14,9 +14,41 @@ msgctxt "field:account.move,allow_draft:"
 msgid "Allow Draft Move"
 msgstr "Permetre assentament en esborrany"
 
+msgctxt "field:account.tax.rule.line,from_organization:"
+msgid "From Organization"
+msgstr "Des de l'organització"
+
+msgctxt "field:account.tax.rule.line,to_organization:"
+msgid "To Organization"
+msgstr "Cap a l'organització"
+
+msgctxt "field:account.tax.rule.line.template,from_organization:"
+msgid "From Organization"
+msgstr "Des de l'organització"
+
+msgctxt "field:account.tax.rule.line.template,to_organization:"
+msgid "To Organization"
+msgstr "Cap a l'organització"
+
 msgctxt "field:account.period,code:"
 msgid "Code"
 msgstr "Codi"
+
+msgctxt "help:account.tax.rule.line,from_organization:"
+msgid "Apply only to addresses in countries belonging to this organization."
+msgstr "Aplica només a les adreces de països pertanyents a aquesta organització."
+
+msgctxt "help:account.tax.rule.line,to_organization:"
+msgid "Apply only to addresses in countries belonging to this organization."
+msgstr "Aplica només a les adreces de països pertanyents a aquesta organització."
+
+msgctxt "help:account.tax.rule.line.template,from_organization:"
+msgid "Apply only to addresses in countries belonging to this organization."
+msgstr "Aplica només a les adreces de països pertanyents a aquesta organització."
+
+msgctxt "help:account.tax.rule.line.template,to_organization:"
+msgid "Apply only to addresses in countries belonging to this organization."
+msgstr "Aplica només a les adreces de països pertanyents a aquesta organització."
 
 msgctxt "help:account.invoice,paid_directly:"
 msgid "The invoice has payed with the 'PAY' button"
