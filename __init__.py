@@ -24,6 +24,15 @@ def register():
         move.CancelMoves,
         module='account_common', type_='wizard')
     Pool.register(
+        account.SaleLine,
+        depends=['sale'],
+        module='account_common', type_='model')
+    Pool.register(
+        account.PurchaseLine,
+        depends=['purchase'],
+        module='account_common', type_='model')
+    Pool.register(
+        account.InvoiceLine,
         invoice.Invoice,
         invoice.InvoiceUndoPay,
         depends=['account_invoice'],

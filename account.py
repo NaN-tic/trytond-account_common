@@ -43,3 +43,24 @@ class TaxRuleLineTemplate(_TaxRuleLineMixin, metaclass=PoolMeta):
 
 class TaxRuleLine(_TaxRuleLineMixin, metaclass=PoolMeta):
     __name__ = 'account.tax.rule.line'
+
+
+class SaleLine(metaclass=PoolMeta):
+    __name__ = 'sale.line'
+
+    def _get_tax_rule_pattern(self):
+        return super()._get_tax_rule_pattern()
+
+
+class PurchaseLine(metaclass=PoolMeta):
+    __name__ = 'purchase.line'
+
+    def _get_tax_rule_pattern(self):
+        return super()._get_tax_rule_pattern()
+
+
+class InvoiceLine(metaclass=PoolMeta):
+    __name__ = 'account.invoice.line'
+
+    def _get_tax_rule_pattern(self):
+        return super()._get_tax_rule_pattern()
