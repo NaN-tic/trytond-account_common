@@ -14,9 +14,41 @@ msgctxt "field:account.move,allow_draft:"
 msgid "Allow Draft Move"
 msgstr "Permitir asiento en borrador"
 
+msgctxt "field:account.tax.rule.line,from_organization:"
+msgid "From Organization"
+msgstr "Desde la organización"
+
+msgctxt "field:account.tax.rule.line,to_organization:"
+msgid "To Organization"
+msgstr "Hacia la organización"
+
+msgctxt "field:account.tax.rule.line.template,from_organization:"
+msgid "From Organization"
+msgstr "Desde la organización"
+
+msgctxt "field:account.tax.rule.line.template,to_organization:"
+msgid "To Organization"
+msgstr "Hacia la organización"
+
 msgctxt "field:account.period,code:"
 msgid "Code"
 msgstr "Código"
+
+msgctxt "help:account.tax.rule.line,from_organization:"
+msgid "Apply only to addresses in countries belonging to this organization."
+msgstr "Aplica solo para las direcciones de países pertenecientes a esta organización."
+
+msgctxt "help:account.tax.rule.line,to_organization:"
+msgid "Apply only to addresses in countries belonging to this organization."
+msgstr "Aplica solo para las direcciones de países pertenecientes a esta organización."
+
+msgctxt "help:account.tax.rule.line.template,from_organization:"
+msgid "Apply only to addresses in countries belonging to this organization."
+msgstr "Aplica solo para las direcciones de países pertenecientes a esta organización."
+
+msgctxt "help:account.tax.rule.line.template,to_organization:"
+msgid "Apply only to addresses in countries belonging to this organization."
+msgstr "Aplica solo para las direcciones de países pertenecientes a esta organización."
 
 msgctxt "help:account.invoice,paid_directly:"
 msgid "The invoice has payed with the 'PAY' button"

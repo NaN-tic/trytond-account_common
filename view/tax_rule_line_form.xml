@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!-- The COPYRIGHT file at the top level of this repository contains the full
+          copyright notices and license terms. -->
+<data>
+    <xpath expr="/form/field[@name='from_country']" position="before">
+        <label name="from_organization"/>
+        <field name="from_organization"/>
+    </xpath>
+    <xpath expr="/form/field[@name='to_country']" position="before">
+        <label name="to_organization"/>
+        <field name="to_organization"/>
+    </xpath>
+</data>
