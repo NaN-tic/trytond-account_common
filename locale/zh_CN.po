@@ -1,0 +1,73 @@
+#
+msgid ""
+msgstr ""
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgctxt "field:account.invoice,paid_directly:"
+msgid "Has Payed directly"
+msgstr "已直接付款"
+
+msgctxt "field:account.move,allow_button_draft:"
+msgid "Allow Button Draft Move"
+msgstr "允许草稿凭证按钮"
+
+msgctxt "field:account.move,allow_draft:"
+msgid "Allow Draft Move"
+msgstr "允许草稿凭证"
+
+msgctxt "field:account.period,code:"
+msgid "Code"
+msgstr "代码"
+
+msgctxt "field:party.configuration,tax_identifier_types:"
+msgid "Additional Tax Identifier Types"
+msgstr "附加税务识别号类型"
+
+msgctxt "help:account.invoice,paid_directly:"
+msgid "The invoice has payed with the 'PAY' button"
+msgstr "该发票已通过“付款”按钮付款。"
+
+msgctxt "help:party.configuration,tax_identifier_types:"
+msgid ""
+"Defines extra identifier types that are considered fiscal.\n"
+"The standard fiscal identifier types from Party are always included."
+msgstr ""
+"定义额外的税务识别号类型。\n"
+"始终包含往来单位模块中的标准税务识别号类型。"
+
+msgctxt "model:ir.message,text:msg_cancel_invoice_with_group_permission"
+msgid "You do not have permission to cancel invoices."
+msgstr "您没有取消发票的权限。"
+
+msgctxt "model:ir.message,text:msg_cancel_invoice_with_move_post"
+msgid "You cannot cancel an invoice with a posted move."
+msgstr "无法取消已有过账凭证的发票。"
+
+#, python-format
+msgctxt "model:ir.message,text:msg_cancel_move_with_origin"
+msgid ""
+"The move \"%(move)s\" colud not be cancelled because came from origin "
+"\"%(origin)s\". To cancel it has to be done througth the origin."
+msgstr "无法取消凭证“%(move)s”，因为它来自“%(origin)s”。必须通过来源单据取消。"
+
+msgctxt "model:ir.model.button,confirm:invoice_undo_pay_button"
+msgid ""
+"This action will remove all the payments done directly to the invoice from "
+"the PAY button. Are you sure you want to continue?"
+msgstr "此操作将删除通过“付款”按钮直接支付到该发票的所有付款。确定要继续吗？"
+
+msgctxt "model:ir.model.button,string:invoice_undo_pay_button"
+msgid "Undo Payment"
+msgstr "撤销付款"
+
+msgctxt "model:ir.model.button,string:move_draft_button"
+msgid "Draft"
+msgstr "草案"
+
+msgctxt "model:res.group,name:group_invoice_cancel"
+msgid "Cancel Invoices"
+msgstr "取消发票"
