@@ -1,0 +1,77 @@
+#
+msgid ""
+msgstr ""
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "field:account.invoice,paid_directly:"
+msgid "Has Payed directly"
+msgstr "Közvetlenül kifizetve"
+
+msgctxt "field:account.move,allow_button_draft:"
+msgid "Allow Button Draft Move"
+msgstr "Piszkozatra állítás gomb engedélyezése"
+
+msgctxt "field:account.move,allow_draft:"
+msgid "Allow Draft Move"
+msgstr "Könyvelési tétel piszkozatra állításának engedélyezése"
+
+msgctxt "field:account.period,code:"
+msgid "Code"
+msgstr "Kód"
+
+msgctxt "field:party.configuration,tax_identifier_types:"
+msgid "Additional Tax Identifier Types"
+msgstr "További adóazonosító-típusok"
+
+msgctxt "help:account.invoice,paid_directly:"
+msgid "The invoice has payed with the 'PAY' button"
+msgstr "A számla a „FIZETÉS” gombbal lett kifizetve."
+
+msgctxt "help:party.configuration,tax_identifier_types:"
+msgid ""
+"Defines extra identifier types that are considered fiscal.\n"
+"The standard fiscal identifier types from Party are always included."
+msgstr ""
+"További, adóügyi azonosítónak tekintett azonosítótípusokat határoz meg.\n"
+"A partner alapértelmezett adóazonosító-típusai mindig szerepelnek."
+
+msgctxt "model:ir.message,text:msg_cancel_invoice_with_group_permission"
+msgid "You do not have permission to cancel invoices."
+msgstr "Nincs jogosultsága számlák visszavonásához."
+
+msgctxt "model:ir.message,text:msg_cancel_invoice_with_move_post"
+msgid "You cannot cancel an invoice with a posted move."
+msgstr "Feladott könyvelési tétellel rendelkező számla nem vonható vissza."
+
+#, python-format
+msgctxt "model:ir.message,text:msg_cancel_move_with_origin"
+msgid ""
+"The move \"%(move)s\" colud not be cancelled because came from origin "
+"\"%(origin)s\". To cancel it has to be done througth the origin."
+msgstr ""
+"A(z) „%(move)s” tétel nem vonható vissza, mert a(z) „%(origin)s” forrásból "
+"származik. A visszavonást a forrásnál kell elvégezni."
+
+msgctxt "model:ir.model.button,confirm:invoice_undo_pay_button"
+msgid ""
+"This action will remove all the payments done directly to the invoice from "
+"the PAY button. Are you sure you want to continue?"
+msgstr ""
+"Ez a művelet eltávolítja a számlához közvetlenül, a FIZETÉS gombbal "
+"rögzített összes fizetést. Biztosan folytatja?"
+
+msgctxt "model:ir.model.button,string:invoice_undo_pay_button"
+msgid "Undo Payment"
+msgstr "Fizetés visszavonása"
+
+msgctxt "model:ir.model.button,string:move_draft_button"
+msgid "Draft"
+msgstr "vázlat"
+
+msgctxt "model:res.group,name:group_invoice_cancel"
+msgid "Cancel Invoices"
+msgstr "Számlák visszavonása"
