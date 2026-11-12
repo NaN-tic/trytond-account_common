@@ -3,6 +3,18 @@
 this repository contains the full copyright notices and license terms. -->
 <tryton>
     <data grouped="1">
+      <record model="ir.message" id="msg_undo_pay_mixed">
+          <field name="text">Invoice "%(invoice)s" also has payments that this action cannot undo. Only individual payments originating from this invoice will be removed. To undo the other payments, manually unreconcile the corresponding lines and reverse these moves: %(moves)s.</field>
+      </record>
+      <record model="ir.message" id="msg_multiple_payment_invoices">
+          <field name="text">Select posted invoices with an outstanding balance for the same party, company, currency and invoice type, without alternative payees.</field>
+      </record>
+      <record model="ir.message" id="msg_multiple_payment_changed">
+          <field name="text">The outstanding balances cannot be paid in full with the displayed payment details. Reopen the payment wizard and review the invoices and their existing payments.</field>
+      </record>
+      <record model="ir.message" id="msg_multiple_payment_method">
+          <field name="text">Select a payment method for the invoices' company whose accounts differ from all the invoice accounts.</field>
+      </record>
       <record model="ir.message" id="msg_cancel_invoice_with_move_post">
           <field name="text">You cannot cancel an invoice with a posted move.</field>
       </record>
