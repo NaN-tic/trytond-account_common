@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<tree>
+    <field name="number"/>
+    <field name="reference"/>
+    <field name="total_amount"/>
+    <field name="amount_to_pay"/>
+    <field name="currency"/>
+</tree>

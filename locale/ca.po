@@ -2,6 +2,30 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
+msgctxt "field:account.invoice.pay.start,multiple:"
+msgid "Multiple Invoices"
+msgstr "Múltiples factures"
+
+msgctxt "field:account.invoice.pay.start,invoices:"
+msgid "Invoices"
+msgstr "Factures"
+
+msgctxt "model:ir.message,text:msg_undo_pay_mixed"
+msgid "Invoice \"%(invoice)s\" also has payments that this action cannot undo. Only individual payments originating from this invoice will be removed. To undo the other payments, manually unreconcile the corresponding lines and reverse these moves: %(moves)s."
+msgstr "La factura \"%(invoice)s\" també té pagaments que aquesta acció no pot desfer. Només s'eliminaran els pagaments individuals amb origen en aquesta factura. Per desfer els altres pagaments, desconcilia manualment les línies corresponents i reverteix aquests assentaments: %(moves)s."
+
+msgctxt "model:ir.message,text:msg_multiple_payment_invoices"
+msgid "Select posted invoices with an outstanding balance for the same party, company, currency and invoice type, without alternative payees."
+msgstr "Selecciona factures comptabilitzades amb saldo pendent del mateix tercer, empresa, moneda i tipus de factura, sense beneficiaris alternatius."
+
+msgctxt "model:ir.message,text:msg_multiple_payment_changed"
+msgid "The outstanding balances cannot be paid in full with the displayed payment details. Reopen the payment wizard and review the invoices and their existing payments."
+msgstr "No es poden pagar íntegrament els saldos pendents amb les dades de pagament mostrades. Torna a obrir l'assistent de pagament i revisa les factures i els pagaments existents."
+
+msgctxt "model:ir.message,text:msg_multiple_payment_method"
+msgid "Select a payment method for the invoices' company whose accounts differ from all the invoice accounts."
+msgstr "Selecciona un mètode de pagament de l'empresa de les factures amb comptes diferents de tots els comptes de les factures."
+
 msgctxt "field:account.invoice,paid_directly:"
 msgid "Has Payed directly"
 msgstr "Ha pagat directament"
