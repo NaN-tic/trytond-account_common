@@ -1,0 +1,77 @@
+#
+msgid ""
+msgstr ""
+"Language: km\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgctxt "field:account.invoice,paid_directly:"
+msgid "Has Payed directly"
+msgstr "បានបង់ដោយផ្ទាល់"
+
+msgctxt "field:account.move,allow_button_draft:"
+msgid "Allow Button Draft Move"
+msgstr "អនុញ្ញាតឱ្យប្រើប៊ូតុងកំណត់កំណត់ត្រាគណនេយ្យជាសេចក្តីព្រាង"
+
+msgctxt "field:account.move,allow_draft:"
+msgid "Allow Draft Move"
+msgstr "អនុញ្ញាតឱ្យកំណត់កំណត់ត្រាគណនេយ្យជាសេចក្តីព្រាង"
+
+msgctxt "field:account.period,code:"
+msgid "Code"
+msgstr "កូដ"
+
+msgctxt "field:party.configuration,tax_identifier_types:"
+msgid "Additional Tax Identifier Types"
+msgstr "ប្រភេទអត្តសញ្ញាណពន្ធបន្ថែម"
+
+msgctxt "help:account.invoice,paid_directly:"
+msgid "The invoice has payed with the 'PAY' button"
+msgstr "វិក្កយបត្រត្រូវបានបង់ដោយប្រើប៊ូតុង «ទូទាត់» (PAY)។"
+
+msgctxt "help:party.configuration,tax_identifier_types:"
+msgid ""
+"Defines extra identifier types that are considered fiscal.\n"
+"The standard fiscal identifier types from Party are always included."
+msgstr ""
+"កំណត់ប្រភេទអត្តសញ្ញាណបន្ថែមដែលចាត់ទុកជាអត្តសញ្ញាណពន្ធ។\n"
+"ប្រភេទអត្តសញ្ញាណពន្ធស្តង់ដារពីភាគីត្រូវបានរួមបញ្ចូលជានិច្ច។"
+
+msgctxt "model:ir.message,text:msg_cancel_invoice_with_group_permission"
+msgid "You do not have permission to cancel invoices."
+msgstr "អ្នកមិនមានសិទ្ធិបោះបង់វិក្កយបត្រទេ។"
+
+msgctxt "model:ir.message,text:msg_cancel_invoice_with_move_post"
+msgid "You cannot cancel an invoice with a posted move."
+msgstr "មិនអាចបោះបង់វិក្កយបត្រដែលមានកំណត់ត្រាបានកត់ក្នុងបញ្ជីរួចហើយបានទេ។"
+
+#, python-format
+msgctxt "model:ir.message,text:msg_cancel_move_with_origin"
+msgid ""
+"The move \"%(move)s\" colud not be cancelled because came from origin "
+"\"%(origin)s\". To cancel it has to be done througth the origin."
+msgstr ""
+"មិនអាចបោះបង់កំណត់ត្រាគណនេយ្យ «%(move)s» បានទេ ព្រោះវាមកពីប្រភព «%(origin)s»។ "
+"សូមបោះបង់ពីប្រភពនោះ។"
+
+msgctxt "model:ir.model.button,confirm:invoice_undo_pay_button"
+msgid ""
+"This action will remove all the payments done directly to the invoice from "
+"the PAY button. Are you sure you want to continue?"
+msgstr ""
+"សកម្មភាពនេះនឹងលុបការទូទាត់ទាំងអស់ដែលបានធ្វើដោយផ្ទាល់លើវិក្កយបត្រតាមប៊ូតុង "
+"«ទូទាត់» (PAY)។ តើអ្នកចង់បន្តឬទេ?"
+
+msgctxt "model:ir.model.button,string:invoice_undo_pay_button"
+msgid "Undo Payment"
+msgstr "មិនធ្វើការទូទាត់វិញ"
+
+msgctxt "model:ir.model.button,string:move_draft_button"
+msgid "Draft"
+msgstr "សេចក្តីព្រាង"
+
+msgctxt "model:res.group,name:group_invoice_cancel"
+msgid "Cancel Invoices"
+msgstr "បោះបង់វិក្កយបត្រ"
